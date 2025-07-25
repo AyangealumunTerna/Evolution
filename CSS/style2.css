@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --h1: 1.25rem;
+  --h2: 1.125rem;
+  --h3: 0.875rem;
+  --h4: 0.8rem;
+  --h5: 0.6rem;
+  --h6: 0.5rem;
+
+  --Bold: 700;
+  --SemiBold: 600;
+  --Medium: 500;
+
+  --White: #fff;
+  --Primary-CyanLightest: #F5FFFE;
+  --Gray-5: #464646;
+  --Accent-LightCyan: #217873;
+}
+
+body {
+  background: var(--Primary-CyanLightest);
+}
+
+.container {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--Primary-CyanLightest);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div section img {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+}
+.h2 {
+  font-size: var(--h1);
+  color: var(--Gray-5);
+  margin-top: 4rem;
+  text-align: left;
+  font-weight: var(--Bold);
+  align-self: flex-start;
+  
+}
+
+.description {
+  font-size: var(--h3);
+  color: var(--Gray-5);
+  margin-top: 1rem;
+  text-align: justify;
+  font-weight: var(--Medium);
+  line-height: 1.3rem;
+  
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.page.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.page.exit-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.page.exit-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--Primary-CyanLightest);
+}
+
+button {
+  padding: 1rem 1.5rem;
+  font-size: var(--h4);
+  cursor: pointer;
+  border: none;
+  background-color: var(--Accent-LightCyan);
+  color: white;
+  border-radius: 8px;
+}
+
+button:disabled {
+  background-color: #b2b2b2;
+  cursor: not-allowed;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: var(--Accent-LightCyan);
+}

@@ -44,7 +44,7 @@
     align-items: center;
     height: 100vh;
 }
-img{
+.img{
       animation: fadeInrotate 1.5s ease-in-out;
 }
 @keyframes fadeInrotate {
@@ -137,7 +137,7 @@ input{
     font-size: var(--h3);
     font-weight: var(--SemiBold);
 }
-.card-title{
+.card-title, .sliding-title{
     font-size: var(--New);
     color: var(--Gray-5);
     font-weight: var(--Bold);
@@ -146,11 +146,52 @@ input{
     justify-content: space-between;
     align-items: baseline;
 }
+.sliding-title{
+    font-size: var(--h1);
+}
+.sliding-cards {
+  position: relative;
+  height: 400px; /* Set to your desired height */
+  overflow: hidden;
+}
+/* .carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+} */
+.sliding-card{
+    padding: 2rem 3rem;
+    box-shadow: 0px 2px 3px rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: 20px;
+    margin: 0 0 1rem 0;
+}
+.host{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.host-name{
+    text-decoration: underline;
+}
+.span{
+    color: var(--Accent-LightCyan);
+    font-size: var(--h3);
+    font-weight: var(--Medium);
+}
+.span span{
+    font-weight: var(--Bold);
+}
 .cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin: 0 1rem ;
+    margin: 0 1rem 6rem 1rem;
     padding: 0 .2rem;
     justify-content: center;
     

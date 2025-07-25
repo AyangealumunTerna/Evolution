@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolution</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
@@ -41,7 +42,89 @@
                 <div class="orange"></div>
             </div>
             <div class="see-all">
-                <p>See all</p>
+                <a href="#cards" style="text-decoration: none; color: #217873;">See all</a>
+            </div>
+        </div>
+        <div class="sliding-cards">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active sliding-card">
+                        <img  src="../Images/Image (10).png" class="d-block w-100" alt="...">
+                        <div class="sliding-text">
+                            <div class="sliding-title">
+                                <p class="title">Music Live from Os...</p>
+                                <img src="../Icons/Frame 8.png" alt="">
+                            </div>
+                            <div class="sliding-details">
+                                <p>Tuesday - 22nd January 2024 - 22:00 3517 W. Gray St. Utica. Pennsylvani...</p>
+                            </div>
+                            <div class="host">
+                                <div>
+                                    <p class="host-name">Theresa Webb</p>
+                                </div>
+                                <div>
+                                    <p>23.5K followers</p>
+                                </div>
+                            </div>
+                            <p class="span" ><span>200</span> people are attending this event.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item sliding-card">
+                        <img src="../Images/Image0.png" class="d-block w-100" alt="...">
+                         <div class="sliding-text">
+                            <div class="sliding-title">
+                                <p class="title">Let you go insane</p>
+                                <img src="../Icons/Frame 8.png" alt="">
+                            </div>
+                            <div class="sliding-details">
+                                <p>Tuesday - 22nd January 2024 - 22:00 1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                            </div>
+                            <div class="host">
+                                <div>
+                                    <p class="host-name">Annette Black</p>
+                                </div>
+                                <div>
+                                    <p>23.5K followers</p>
+                                </div>
+                            </div>
+                            <p class="span" ><span>200</span> people are attending this event.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item sliding-card">
+                        <img  src="../Images/starboy.png" class="d-block w-100" alt="...">
+                         <div class="sliding-text">
+                            <div class="sliding-title">
+                                <p class="title">Music Live from Os...</p>
+                                <img src="../Icons/Frame 8.png" alt="">
+                            </div>
+                            <div class="sliding-details">
+                                <p>Tuesday - 27th February 2024 - 18:00 3517 W. Gray St. Utica. Pennsylvania 57867</p>
+                            </div>
+                            <div class="host">
+                                <div>
+                                    <p class="host-name">Jacob Jones</p>
+                                </div>
+                                <div>
+                                    <p>23.5K followers</p>
+                                </div>
+                            </div>
+                            <p class="span" ><span>200</span> people are attending this event.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: brightness(0) invert(0);" ></span>
+                    <span class="visually-hidden" >Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: brightness(0) invert(0);"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <div class="sliding-container">
@@ -50,10 +133,10 @@
                 <div class="orange"></div>
             </div>
             <div class="see-all">
-                <p>See all</p>
+                <a href="#cards" style="text-decoration: none; color: #217873;">See all</a>
             </div>
         </div>
-        <div class="cards">
+        <div class="cards" id="cards">
             <div class="card">
                 <img src="../Images/Image.png" alt="">
                 <div class="card-text">
@@ -229,7 +312,7 @@
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><img src="../Icons/Home.png" alt=""></a>
+                    <a class="nav-link active" aria-current="page" href="component.html"><img src="../Icons/Home.png" alt=""></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img src="../Icons/Booking.png" alt=""></a>
@@ -250,7 +333,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="greetings">
+            <div class="pics-container">
+                <div class="user-pics">
+                    <img src="../Icons/Color=Dark (45).png" alt="">
+                </div>
+                <div>
+                    <p class="hey">Hey!</p>
+                    <p class="user">Let's get you started</p>
+                </div>
+            </div>
+            <div>
+                <img src="../Icons/Color=Dark (36).png" alt="">
+            </div>
+        </div>
+
+        <!-- INTRO SECTION -->
+        <div class="sign-in-container section" id="introSection">
+            <h1>Sign in to continue</h1>
+            <p class="sign-in-text">
+                Welcome back! Please enter your details to sign in.
+                If you don’t have an account, you can <a href="#" onclick="showSignUp(event)">Sign up here</a>.
+            </p>
+            <a href="#" class="sign-btn" onclick="showSignIn(event)">Sign in</a>
+        </div>
+        <!-- SIGN-IN SECTION -->
+        <div class="section d-none" id="signInSection">
+            <h1>Sign In</h1>
+            <p>Welcome back!</p>
+            <!-- Form or fields go here -->
+            <!-- <a href="#" class="sign-btn" onclick="showDashboard()">Submit</a> -->
+        </div>
+
+        <!-- SIGN UP SECTION -->
+        <div class="section d-none" id="signUpSection">
+            <h1>Sign Up</h1>
+            <p>Create your account</p>
+            <!-- Form or fields go here -->
+            <!-- <a href="#" class="sign-btn" onclick="showDashboard()">Register</a> -->
+        </div>
+
+        <!-- DASHBOARD / AFTER LOGIN -->
+        <div class="section d-none" id="dashboardSection">
+            <h1>You’re In!</h1>
+            <p>Welcome to the main page 🚀</p>
+        </div>
+
+
+
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="component.html"><img src="../Icons/Home.png"
+                            alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./booking.html"><img src="../Icons/Booking.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./add.html"><img src="../Icons/Add.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./favourite.html"><img src="../Icons/favourite.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./event.html"><img src="../Icons/My-Events.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="../JavaScript/signin.js"></script>
+</body>
+
+</html>
